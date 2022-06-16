@@ -6,10 +6,10 @@ const Navbar = () => {
             <h1 className="header">Business Tracker</h1>
             <ul className="page-list">
                 <li>
-                    <button className="signIn">Sign In</button>
+                    <button className="signIn navButton">Sign In</button>
                 </li>
                 <li>
-                    <button className="signOut">Sign Out</button>
+                    <button className="signOut navButton">Sign Out</button>
                 </li>
             </ul>
         </div>
