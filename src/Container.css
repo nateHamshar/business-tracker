@@ -1,0 +1,64 @@
+.container{
+    width: 80%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.093);
+    margin: 4rem auto;
+    padding: .25em;
+    display: block;
+    border-radius: 1%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+}
+.navigation{
+    height: 10%;
+    background-color: rgb(18, 18, 56);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.directory{
+    margin-left: 5%;
+}
+.directoryButton{
+    height: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 100vw;
+    outline: none;
+}
+
+.directoryButton:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.inputButton{
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    border-radius: 100vw;
+    height: 2rem;
+    border: none;
+    background: transparent;
+    color: white;
+}
+.inputButton:hover{
+    color: orangered;
+    cursor: pointer;
+}
