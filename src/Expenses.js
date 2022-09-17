@@ -1,18 +1,5 @@
 
-import getData from "./firebase";
-
 const Expenses = () => {
-    
-    const test = getData();
-    
-    const getArray = (snapshot) => {
-        let logs = []
-        console.log(snapshot.forEach(doc => {
-            logs.push(doc.metadata)
-        }))
-        }
-    getArray(test);
-
     return (
         <section>
                 <ul className="inputLog">
