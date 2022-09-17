@@ -1,10 +1,7 @@
 import "./Submit.css";
-import addDocument from "./Overview.js";
 
-const Submit = () => {
-    
-
-
+const Submit = (props) => {
+    const addDocument = props.addDocument;
     return (
         <section className="submitSection">
             <form name="submitForm" action="#" className="submitForm">
@@ -19,7 +16,7 @@ const Submit = () => {
                 <input type="textarea" className="descriptionInput" placeholder="Description"
                 name="descriptionInput" required
                 />
-                <button className="submitButton directoryButton" type="submit" for="submitForm" onClick={addDocument()}>Submit</button>
+                <button className="submitButton directoryButton" type="submit" for="submitForm" onClick={() => addDocument()}>Submit</button>
             </form>
         </section>
     );

@@ -5,13 +5,14 @@ import Overview from "./Overview";
 // import Expenses from "./Expenses";
 
 
-const Content = () => {
+const Content = (props) => {
 
+const inputs = props.inputs;
 
  return (
     <div className="content">
         <div className="media">
-            <Overview />
+            <Overview inputs={inputs} />
         </div> 
        
     </div>
