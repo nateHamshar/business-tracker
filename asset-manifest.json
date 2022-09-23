@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/business-tracker/static/css/main.faffadd0.css",
+    "main.js": "/business-tracker/static/js/main.61ed237a.js",
+    "index.html": "/business-tracker/index.html",
+    "main.faffadd0.css.map": "/business-tracker/static/css/main.faffadd0.css.map",
+    "main.61ed237a.js.map": "/business-tracker/static/js/main.61ed237a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.faffadd0.css",
+    "static/js/main.61ed237a.js"
+  ]
+}
