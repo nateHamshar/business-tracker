@@ -21,8 +21,8 @@ const Statistics = (props) => {
                 cumSales = cumSales + parseFloat(inputs[i].price)
             }
         };
-        setTotalExpenses(cumExpenses);
-        setTotalSales(cumSales);
+        setTotalExpenses(cumExpenses.toFixed(2));
+        setTotalSales(cumSales.toFixed(2));
         setNetProfit((cumSales - cumExpenses).toFixed(2));
 
     },[inputs]);
