@@ -1,0 +1,22 @@
+
+.statsList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+}
+
+.itemTitle{
+    color: rgb(18, 18, 56);
+    font-family: "Poppins", sans-serif;
+}
+.dollarValue{
+    color: orangered;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.dollarValue::before{
+    content: "$";
+}

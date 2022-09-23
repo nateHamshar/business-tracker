@@ -5,21 +5,26 @@ const Submit = (props) => {
     return (
         <section className="submitSection">
             <form name="submitForm" action="#" className="submitForm">
-                <input type="text" className="creatorInput" placeholder="User's Name" name="nameInput" required/>
-                <select name="typeInput" className="typeSelect" required>
-                    <option value="type" disabled="true" default>Type of Input</option>
+                <input type="text" className="creatorInput" placeholder="User's Name" id="nameInput" required/>
+                <select id="typeInput" className="typeSelect" required>
+                    <option value="type" disabled default>Type of Input</option>
                     <option value="expense">expense</option>
                     <option value="sale">sale</option>
                 </select>
-                <input type="number" className="valueInput" required
-                placeholder="Value" name="valueInput" />
+                <input type="number" step=".01" className="valueInput" required
+                placeholder="Value" id="valueInput" />
                 <input type="textarea" className="descriptionInput" placeholder="Description"
-                name="descriptionInput" required
+                id="descriptionInput" required
                 />
-                <button className="submitButton directoryButton" type="submit" for="submitForm" onClick={() => addDocument()}>Submit</button>
+                <button className="submitButton directoryButton" onClick={() => addDocument(
+                    document.getElementById("nameInput").value,
+                    document.getElementById("typeInput").value,
+                    document.getElementById("valueInput").value,
+                    document.getElementById("descriptionInput").value
+                )}>Submit</button>
             </form>
         </section>
     );
 }
- 
+
 export default Submit;
